@@ -6,6 +6,7 @@ gem 'bootstrap-sass'
 gem 'haml-rails'
 gem 'kaminari'
 gem 'faker'
+gem "i18n-js"
 
 group :development, :test do
   gem 'sqlite3'
