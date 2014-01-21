@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 gem 'bootstrap-sass'
+gem 'haml-rails'
 
 group :development, :test do
   gem 'sqlite3'
@@ -11,6 +12,7 @@ group :development, :test do
   gem 'spork-rails'
   gem 'guard-spork'
   gem 'childprocess'
+  gem 'erb2haml'
 end
 
 group :test do
