@@ -12,6 +12,14 @@ describe "プロジェクト一覧ページ" do
 
       let(:submit) { "Create" }
 
+      describe "無効なデータ入力" do
+        before { click_button submit }
+
+        it "エラーメッセージが表示される" do
+          should have_selector("div.alert-error")
+        end        
+      end
+
       describe "validなデータの入力" do
         before do
           fill_in "Name", with: "Example Project"
